@@ -1,0 +1,171 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Light Theme - Initiatives Foundation colors */
+  --background: #faf9f6;
+  --foreground: #212121;
+  --card: #faf9f6;
+  --card-foreground: #212121;
+  --popover: #faf9f6;
+  --popover-foreground: #212121;
+  --primary: #f57c00;
+  --primary-foreground: #faf9f6;
+  --secondary: #1565c0;
+  --secondary-foreground: #faf9f6;
+  --muted: #f5f5f5;
+  --muted-foreground: #666666;
+  --accent: #1565c0;
+  --accent-foreground: #faf9f6;
+  --destructive: #d32f2f;
+  --destructive-foreground: #faf9f6;
+  --border: #e0e0e0;
+  --input: #e0e0e0;
+  --ring: #f57c00;
+  --chart-1: #f57c00;
+  --chart-2: #1565c0;
+  --chart-3: #4caf50;
+  --chart-4: #ff9800;
+  --chart-5: #9c27b0;
+  --radius: 0.625rem;
+  --sidebar: #faf9f6;
+  --sidebar-foreground: #212121;
+  --sidebar-primary: #f57c00;
+  --sidebar-primary-foreground: #faf9f6;
+  --sidebar-accent: #f5f5f5;
+  --sidebar-accent-foreground: #212121;
+  --sidebar-border: #e0e0e0;
+  --sidebar-ring: #f57c00;
+}
+
+.dark {
+  /* Dark Theme - Initiatives Foundation colors */
+  --background: #222831;
+  --foreground: #faf9f6;
+  --card: #222831;
+  --card-foreground: #faf9f6;
+  --popover: #222831;
+  --popover-foreground: #faf9f6;
+  --primary: #ff9800;
+  --primary-foreground: #222831;
+  --secondary: #42a5f5;
+  --secondary-foreground: #222831;
+  --muted: #393e46;
+  --muted-foreground: #b0b0b0;
+  --accent: #42a5f5;
+  --accent-foreground: #222831;
+  --destructive: #f44336;
+  --destructive-foreground: #faf9f6;
+  --border: #393e46;
+  --input: #393e46;
+  --ring: #ff9800;
+  --chart-1: #ff9800;
+  --chart-2: #42a5f5;
+  --chart-3: #66bb6a;
+  --chart-4: #ffa726;
+  --chart-5: #ab47bc;
+  --sidebar: #222831;
+  --sidebar-foreground: #faf9f6;
+  --sidebar-primary: #ff9800;
+  --sidebar-primary-foreground: #222831;
+  --sidebar-accent: #393e46;
+  --sidebar-accent-foreground: #faf9f6;
+  --sidebar-border: #393e46;
+  --sidebar-ring: #ff9800;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Updated animations and added proper theme transition */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .theme-transition {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

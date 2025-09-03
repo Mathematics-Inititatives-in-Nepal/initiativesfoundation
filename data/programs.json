@@ -1,0 +1,156 @@
+{
+  "programs": [
+    {
+      "id": "math-enrichment",
+      "title": "Mathematics Enrichment Program",
+      "initiative": "MIN",
+      "description": "Advanced mathematics training for high-achieving students with focus on problem-solving and critical thinking.",
+      "duration": "6 months",
+      "participants": "50 students per batch",
+      "location": "Kathmandu & Online",
+      "level": "Advanced",
+      "icon": "BookOpen",
+      "features": ["Problem Solving", "Competition Prep", "Peer Learning", "Expert Mentorship"],
+      "schedule": "Weekends, 4 hours/week",
+      "nextBatch": "March 2024",
+      "image": "/mathematics-enrichment-students-problem-solving.jpg"
+    },
+    {
+      "id": "teacher-training",
+      "title": "Mathematics Teacher Training",
+      "initiative": "MIN",
+      "description": "Professional development program for mathematics educators focusing on modern teaching methodologies.",
+      "duration": "3 months",
+      "participants": "30 teachers per batch",
+      "location": "Regional Centers",
+      "level": "Professional",
+      "icon": "Award",
+      "features": ["Modern Pedagogy", "Technology Integration", "Assessment Methods", "Curriculum Design"],
+      "schedule": "Monthly workshops",
+      "nextBatch": "April 2024",
+      "image": "/teacher-training-workshop-mathematics-educators.jpg"
+    },
+    {
+      "id": "coding-bootcamp",
+      "title": "Coding Bootcamp",
+      "initiative": "ITF",
+      "description": "Intensive programming course covering web development, mobile apps, and software engineering fundamentals.",
+      "duration": "4 months",
+      "participants": "25 students per batch",
+      "location": "Kathmandu",
+      "level": "Beginner to Intermediate",
+      "icon": "Laptop",
+      "features": ["Full-Stack Development", "Mobile Apps", "Project-Based Learning", "Industry Mentors"],
+      "schedule": "Weekdays, 3 hours/day",
+      "nextBatch": "February 2024",
+      "image": "/coding-bootcamp-students-programming-laptops.jpg"
+    },
+    {
+      "id": "soft-skills-workshop",
+      "title": "Soft Skills Development Workshop",
+      "initiative": "ITF",
+      "description": "Comprehensive program developing communication, leadership, and interpersonal skills for career success.",
+      "duration": "2 months",
+      "participants": "40 participants per batch",
+      "location": "Multiple Cities",
+      "level": "All Levels",
+      "icon": "Users",
+      "features": ["Communication Skills", "Leadership Training", "Team Building", "Presentation Skills"],
+      "schedule": "Bi-weekly sessions",
+      "nextBatch": "January 2024",
+      "image": "/soft-skills-workshop-communication-training.jpg"
+    },
+    {
+      "id": "global-exchange",
+      "title": "Global Student Exchange Program",
+      "initiative": "CGI",
+      "description": "International exchange program connecting Nepali students with global educational opportunities.",
+      "duration": "1 semester",
+      "participants": "20 students per year",
+      "location": "International",
+      "level": "University Level",
+      "icon": "Globe",
+      "features": ["Cultural Immersion", "Academic Credits", "Language Learning", "Global Network"],
+      "schedule": "Semester-based",
+      "nextBatch": "September 2024",
+      "image": "/global-student-exchange-international-university.jpg"
+    },
+    {
+      "id": "startup-incubator",
+      "title": "Social Startup Incubator",
+      "initiative": "ISE",
+      "description": "6-month intensive program for aspiring social entrepreneurs to develop and launch their ventures.",
+      "duration": "6 months",
+      "participants": "15 startups per cohort",
+      "location": "Kathmandu",
+      "level": "Entrepreneur",
+      "icon": "Target",
+      "features": ["Business Planning", "Funding Support", "Mentorship", "Market Access"],
+      "schedule": "Full-time program",
+      "nextBatch": "May 2024",
+      "image": "/startup-incubator-entrepreneurs-business-planning.jpg"
+    },
+    {
+      "id": "research-fellowship",
+      "title": "Open Research Fellowship",
+      "initiative": "ORI",
+      "description": "Research training program for undergraduate and graduate students across various disciplines.",
+      "duration": "8 months",
+      "participants": "30 fellows per year",
+      "location": "University Partners",
+      "level": "Graduate Level",
+      "icon": "Microscope",
+      "features": ["Research Methods", "Publication Support", "Peer Review", "Conference Presentations"],
+      "schedule": "Flexible, project-based",
+      "nextBatch": "June 2024",
+      "image": "/research-fellowship-students-laboratory-microscope.jpg"
+    },
+    {
+      "id": "innovation-lab",
+      "title": "Innovation & Maker Lab",
+      "initiative": "ITF",
+      "description": "Hands-on program combining technology, creativity, and problem-solving through project-based learning.",
+      "duration": "3 months",
+      "participants": "20 participants per batch",
+      "location": "Innovation Center",
+      "level": "Intermediate",
+      "icon": "Lightbulb",
+      "features": ["3D Printing", "Electronics", "Design Thinking", "Prototyping"],
+      "schedule": "Weekends, 6 hours/week",
+      "nextBatch": "March 2024",
+      "image": "/innovation-maker-lab-3d-printing-electronics.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "min",
+      "name": "Mathematics (MIN)",
+      "icon": "BookOpen",
+      "color": "primary"
+    },
+    {
+      "id": "itf",
+      "name": "Technology (ITF)",
+      "icon": "Laptop",
+      "color": "secondary"
+    },
+    {
+      "id": "cgi",
+      "name": "Global (CGI)",
+      "icon": "Globe",
+      "color": "primary"
+    },
+    {
+      "id": "ise",
+      "name": "Entrepreneurship (ISE)",
+      "icon": "Target",
+      "color": "secondary"
+    },
+    {
+      "id": "ori",
+      "name": "Research (ORI)",
+      "icon": "Microscope",
+      "color": "primary"
+    }
+  ]
+}
