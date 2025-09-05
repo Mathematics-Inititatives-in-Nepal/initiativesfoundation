@@ -4,6 +4,48 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Users, Target, Globe, Lightbulb, BookOpen, Play } from "lucide-react"
 import initiativesData from "@/data/initiatives.json"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Our Initiatives - Initiatives Foundation",
+  description:
+    "Explore the comprehensive educational initiatives by Initiatives Foundation. Discover our programs in mathematics, teacher training, coding, and global exchange designed to transform education in Nepal.",
+  keywords: [
+    "Initiatives Foundation programs",
+    "Educational initiatives Nepal",
+    "Mathematics enrichment Nepal",
+    "Teacher training Nepal",
+    "Coding bootcamp Nepal",
+    "Global exchange programs",
+    "Education transformation Nepal",
+  ],
+  openGraph: {
+    title: "Our Initiatives - Initiatives Foundation",
+    description:
+      "Explore the comprehensive educational initiatives by Initiatives Foundation. Discover our programs in mathematics, teacher training, coding, and global exchange designed to transform education in Nepal.",
+    url: "https://www.initiativesfoundation.org/initiatives",
+    siteName: "Initiatives Foundation",
+    images: [
+      {
+        url: "https://www.initiativesfoundation.org/images/initiatives-og.jpg",
+        width: 800,
+        height: 600,
+        alt: "Initiatives Foundation Programs",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Initiatives - Initiatives Foundation",
+    description:
+      "Explore the comprehensive educational initiatives by Initiatives Foundation. Discover our programs in mathematics, teacher training, coding, and global exchange designed to transform education in Nepal.",
+    creator: "@initiativesfdn",
+    images: ["https://www.initiativesfoundation.org/images/initiatives-twitter.jpg"],
+  },
+}
+
 
 export default function InitiativesPage() {
   const iconMap = {
@@ -20,7 +62,7 @@ export default function InitiativesPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/nepal-education-transformation-students-classroom.jpg"
+            src="/images/nepal-education-transformation-students-classroom.jpg"
             alt="Students in classroom"
             className="w-full h-full object-cover opacity-20"
           />

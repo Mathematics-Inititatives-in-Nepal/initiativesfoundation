@@ -13,7 +13,7 @@
       "features": ["Problem Solving", "Competition Prep", "Peer Learning", "Expert Mentorship"],
       "schedule": "Weekends, 4 hours/week",
       "nextBatch": "March 2024",
-      "image": "/mathematics-enrichment-students-problem-solving.jpg"
+      "image": "/images/mathematics-enrichment-students-problem-solving.jpg"
     },
     {
       "id": "teacher-training",
@@ -28,7 +28,7 @@
       "features": ["Modern Pedagogy", "Technology Integration", "Assessment Methods", "Curriculum Design"],
       "schedule": "Monthly workshops",
       "nextBatch": "April 2024",
-      "image": "/teacher-training-workshop-mathematics-educators.jpg"
+      "image": "/images/teacher-training-workshop-mathematics-educators.jpg"
     },
     {
       "id": "coding-bootcamp",
@@ -43,7 +43,7 @@
       "features": ["Full-Stack Development", "Mobile Apps", "Project-Based Learning", "Industry Mentors"],
       "schedule": "Weekdays, 3 hours/day",
       "nextBatch": "February 2024",
-      "image": "/coding-bootcamp-students-programming-laptops.jpg"
+      "image": "/images/coding-bootcamp-students-programming-laptops.jpg"
     },
     {
       "id": "soft-skills-workshop",
@@ -58,7 +58,7 @@
       "features": ["Communication Skills", "Leadership Training", "Team Building", "Presentation Skills"],
       "schedule": "Bi-weekly sessions",
       "nextBatch": "January 2024",
-      "image": "/soft-skills-workshop-communication-training.jpg"
+      "image": "/images/soft-skills-workshop-communication-training.jpg"
     },
     {
       "id": "global-exchange",
@@ -73,7 +73,7 @@
       "features": ["Cultural Immersion", "Academic Credits", "Language Learning", "Global Network"],
       "schedule": "Semester-based",
       "nextBatch": "September 2024",
-      "image": "/global-student-exchange-international-university.jpg"
+      "image": "/images/global-student-exchange-international-university.jpg"
     },
     {
       "id": "startup-incubator",
@@ -88,7 +88,7 @@
       "features": ["Business Planning", "Funding Support", "Mentorship", "Market Access"],
       "schedule": "Full-time program",
       "nextBatch": "May 2024",
-      "image": "/startup-incubator-entrepreneurs-business-planning.jpg"
+      "image": "/images/startup-incubator-entrepreneurs-business-planning.jpg"
     },
     {
       "id": "research-fellowship",
@@ -103,7 +103,7 @@
       "features": ["Research Methods", "Publication Support", "Peer Review", "Conference Presentations"],
       "schedule": "Flexible, project-based",
       "nextBatch": "June 2024",
-      "image": "/research-fellowship-students-laboratory-microscope.jpg"
+      "image": "/images/research-fellowship-students-laboratory-microscope.jpg"
     },
     {
       "id": "innovation-lab",
@@ -118,7 +118,7 @@
       "features": ["3D Printing", "Electronics", "Design Thinking", "Prototyping"],
       "schedule": "Weekends, 6 hours/week",
       "nextBatch": "March 2024",
-      "image": "/innovation-maker-lab-3d-printing-electronics.jpg"
+      "image": "/images/innovation-maker-lab-3d-printing-electronics.jpg"
     }
   ],
   "categories": [

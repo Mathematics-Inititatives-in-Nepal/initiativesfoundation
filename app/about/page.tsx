@@ -1,9 +1,50 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Target, Eye, Heart, Users, Globe } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "About Us - Initiatives Foundation",
+  description:
+    "Learn about Initiatives Foundation's mission, vision, and values. Discover how we transform education in Nepal through innovative programs and community empowerment.",
+  keywords: [
+    "About Initiatives Foundation",
+    "Our Mission",
+    "Our Vision",
+    "Our Values",
+    "Education Transformation Nepal",
+    "Community Empowerment Nepal",
+    "Social Enterprise Nepal",
+  ],
+  openGraph: {
+    title: "About Us - Initiatives Foundation",
+    description:
+      "Learn about Initiatives Foundation's mission, vision, and values. Discover how we transform education in Nepal through innovative programs and community empowerment.",
+    url: "https://www.initiativesfoundation.org/about",
+    siteName: "Initiatives Foundation",
+    images: [
+      {
+        url: "https://www.initiativesfoundation.org/images/nepal-education-foundation-team-working-together.jpg",
+        width: 800,
+        height: 600,
+        alt: "Initiatives Foundation Team",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - Initiatives Foundation",
+    description:
+      "Learn about Initiatives Foundation's mission, vision, and values. Discover how we transform education in Nepal through innovative programs and community empowerment.",
+    creator: "@initiativesfdn",
+    images: ["https://www.initiativesfoundation.org/images/nepal-education-foundation-team-working-together.jpg"],
+  },
+}
 
 export default function AboutPage() {
   const values = [
@@ -59,7 +100,7 @@ export default function AboutPage() {
             </div>
             <div className="animate-slide-up">
               <Image
-                src="/nepal-education-foundation-team-working-together.jpg"
+                src="/images/nepal-education-foundation-team-working-together.jpg"
                 alt="Initiatives Foundation team"
                 width={500}
                 height={400}

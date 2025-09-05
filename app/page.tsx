@@ -19,21 +19,21 @@ export default function HomePage() {
       shortName: "MIN",
       description: "Transforming mathematics education through enrichment programs and competitions.",
       href: "/initiatives/min",
-      image: "/mathematics-education-nepal-students.jpg",
+      image: "/images/mathematics-education-nepal-students.jpg",
     },
     {
       name: "Initiative for the Future",
       shortName: "ITF",
       description: "Developing essential soft skills through workshops and innovation programs.",
       href: "/initiatives/itf",
-      image: "/students-workshop-technology-skills.jpg",
+      image: "/images/students-workshop-technology-skills.jpg",
     },
     {
       name: "Connect Globe Initiative",
       shortName: "CGI",
       description: "Fostering international collaborations and global learning opportunities.",
       href: "/initiatives/cgi",
-      image: "/international-collaboration-students-global.jpg",
+      image: "/images/international-collaboration-students-global.jpg",
     },
   ]
 
@@ -68,7 +68,7 @@ export default function HomePage() {
             </div>
             <div className="animate-slide-up">
               <Image
-                src="/nepal-students-learning-education-community.jpg"
+                src="/images/nepal-students-learning-education-community.jpg"
                 alt="Students learning in Nepal"
                 width={600}
                 height={500}
@@ -117,7 +117,7 @@ export default function HomePage() {
               <Card key={index} className="hover-lift group">
                 <div className="aspect-video overflow-hidden rounded-t-lg">
                   <Image
-                    src={initiative.image || "/initiatives-foundation-default.jpg"}
+                    src={initiative.image || "/images/initiatives-foundation-default.jpg"}
                     alt={initiative.name}
                     width={300}
                     height={200}

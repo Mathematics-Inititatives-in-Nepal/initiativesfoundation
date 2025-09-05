@@ -19,6 +19,48 @@ import {
   TrendingUp,
 } from "lucide-react"
 import programsData from "@/data/programs.json"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Our Programs - Initiatives Foundation",
+  description:
+    "Explore the diverse educational programs offered by Initiatives Foundation. From mathematics enrichment to coding bootcamps and global exchanges, find a program that fits your learning journey.",
+  keywords: [
+    "Initiatives Foundation programs",
+    "Educational programs Nepal",
+    "Mathematics programs",
+    "Teacher training courses",
+    "Coding bootcamps",
+    "Skill development Nepal",
+    "Youth empowerment programs",
+  ],
+  openGraph: {
+    title: "Our Programs - Initiatives Foundation",
+    description:
+      "Explore the diverse educational programs offered by Initiatives Foundation. From mathematics enrichment to coding bootcamps and global exchanges, find a program that fits your learning journey.",
+    url: "https://www.initiativesfoundation.org/programs",
+    siteName: "Initiatives Foundation",
+    images: [
+      {
+        url: "https://www.initiativesfoundation.org/images/programs-og.jpg",
+        width: 800,
+        height: 600,
+        alt: "Initiatives Foundation Programs",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Programs - Initiatives Foundation",
+    description:
+      "Explore the diverse educational programs offered by Initiatives Foundation. From mathematics enrichment to coding bootcamps and global exchanges, find a program that fits your learning journey.",
+    creator: "@initiativesfdn",
+    images: ["https://www.initiativesfoundation.org/images/programs-twitter.jpg"],
+  },
+}
+
 
 const iconMap = {
   BookOpen,
@@ -61,7 +103,7 @@ export default function ProgramsPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/mathematics-enrichment-students-problem-solving.jpg"
+            src="/images/mathematics-enrichment-students-problem-solving.jpg"
             alt="Students learning together"
             className="w-full h-full object-cover opacity-20"
           />

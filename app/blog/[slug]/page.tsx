@@ -5,6 +5,57 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { CalendarDays, User, ArrowLeft, Share2 } from "lucide-react"
 import blogsData from "@/data/blogs.json"
+import type { Metadata } from "next"
+
+interface BlogPostPageProps {
+  params: {
+    slug: string
+  }
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const post = blogsData.find((post) => post.slug === params.slug)
+
+  if (!post) {
+    return {
+      title: "Post Not Found - Initiatives Foundation",
+      description: "The blog post you are looking for does not exist.",
+    }
+  }
+
+  return {
+    title: `${post.title} - Initiatives Foundation`,
+    description: post.excerpt,
+    keywords: [...post.tags, "Initiatives Foundation", "Blog", "Nepal"],
+    openGraph: {
+      title: `${post.title} - Initiatives Foundation`,
+      description: post.excerpt,
+      url: `https://www.initiativesfoundation.org/blog/${post.slug}`,
+      siteName: "Initiatives Foundation",
+      images: [
+        {
+          url: post.image || "https://www.initiativesfoundation.org/images/blog-default-article.jpg",
+          width: 800,
+          height: 600,
+          alt: post.title,
+        },
+      ],
+      locale: "en_US",
+      type: "article",
+      publishedTime: new Date(post.date).toISOString(),
+      authors: [post.author],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} - Initiatives Foundation`,
+      description: post.excerpt,
+      creator: "@initiativesfdn",
+      images: [post.image || "https://www.initiativesfoundation.org/images/blog-default-article.jpg"],
+    },
+  }
+}
+
+
 
 interface BlogPostPageProps {
   params: {
@@ -62,7 +113,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           {/* Featured Image */}
           <div className="aspect-video mb-8 overflow-hidden rounded-lg">
             <Image
-              src={post.image || "/blog-default-article.jpg"}
+              src={post.image || "/images/blog-default-article.jpg"}
               alt={post.title}
               width={800}
               height={450}
@@ -103,7 +154,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 <Link key={relatedPost.id} href={`/blog/${relatedPost.slug}`} className="group block">
                   <div className="aspect-video mb-4 overflow-hidden rounded-lg">
                     <Image
-                      src={relatedPost.image || "/blog-default-related.jpg"}
+                      src={relatedPost.image || "/images/blog-default-related.jpg"}
                       alt={relatedPost.title}
                       width={400}
                       height={225}

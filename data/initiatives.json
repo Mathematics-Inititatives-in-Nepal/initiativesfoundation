@@ -4,7 +4,7 @@
     "name": "Mathematics Initiatives in Nepal",
     "shortName": "MIN",
     "description": "Transforming mathematics education through enrichment programs, competitions, and teacher training.",
-    "image": "/mathematics-education-nepal-students.jpg",
+    "image": "/images/mathematics-education-nepal-students.jpg",
     "features": ["Math Enrichment", "Competitions", "Teacher Training", "Outreach Programs"],
     "impact": {
       "students": "5000+",
@@ -17,7 +17,7 @@
     "name": "Initiative for the Future",
     "shortName": "ITF",
     "description": "Developing essential soft skills through workshops, maker labs, and innovation programs.",
-    "image": "/students-workshop-technology-skills.jpg",
+    "image": "/images/students-workshop-technology-skills.jpg",
     "features": ["Soft Skills Workshops", "Maker Labs", "Hackathons", "Coding Bootcamps"],
     "impact": {
       "participants": "2000+",
@@ -30,7 +30,7 @@
     "name": "Connect Globe Initiative",
     "shortName": "CGI",
     "description": "Fostering international collaborations and global learning opportunities.",
-    "image": "/international-collaboration-students-global.jpg",
+    "image": "/images/international-collaboration-students-global.jpg",
     "features": ["International Collaborations", "Student Exchanges", "Global Projects", "Cultural Exchange"],
     "impact": {
       "partnerships": "25+",
@@ -43,7 +43,7 @@
     "name": "Initiative for Social Entrepreneurship",
     "shortName": "ISE",
     "description": "Supporting social business incubation and entrepreneurship development.",
-    "image": "/social-entrepreneurship-business-incubation.jpg",
+    "image": "/images/social-entrepreneurship-business-incubation.jpg",
     "features": ["Business Incubation", "Mentorship", "Funding Support", "Network Building"],
     "impact": {
       "startups": "15+",
@@ -56,7 +56,7 @@
     "name": "Open Research Initiative",
     "shortName": "ORI",
     "description": "Democratizing research access through training, mentorship, and open publications.",
-    "image": "/research-collaboration-students-mentorship.jpg",
+    "image": "/images/research-collaboration-students-mentorship.jpg",
     "features": ["Research Training", "Mentorship", "Open Publications", "Interdisciplinary Projects"],
     "impact": {
       "researchers": "300+",

@@ -1,9 +1,49 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CalendarDays, User, ArrowRight } from "lucide-react"
 import blogsData from "@/data/blogs.json"
+
+export const metadata: Metadata = {
+  title: "Blog - Initiatives Foundation",
+  description:
+    "Explore the latest news, stories, and insights from Initiatives Foundation. Read about our educational programs, community impact, and transformative initiatives in Nepal.",
+  keywords: [
+    "Initiatives Foundation Blog",
+    "Education News Nepal",
+    "Nepal Education Stories",
+    "Community Impact Nepal",
+    "Educational Initiatives",
+    "Transformative Education",
+  ],
+  openGraph: {
+    title: "Blog - Initiatives Foundation",
+    description:
+      "Explore the latest news, stories, and insights from Initiatives Foundation. Read about our educational programs, community impact, and transformative initiatives in Nepal.",
+    url: "https://www.initiativesfoundation.org/blog",
+    siteName: "Initiatives Foundation",
+    images: [
+      {
+        url: "https://www.initiativesfoundation.org/images/blog-default-featured.jpg",
+        width: 800,
+        height: 600,
+        alt: "Initiatives Foundation Blog",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog - Initiatives Foundation",
+    description:
+      "Explore the latest news, stories, and insights from Initiatives Foundation. Read about our educational programs, community impact, and transformative initiatives in Nepal.",
+    creator: "@initiativesfdn",
+    images: ["https://www.initiativesfoundation.org/images/blog-default-featured.jpg"],
+  },
+}
 
 export default function BlogPage() {
   return (
@@ -24,7 +64,7 @@ export default function BlogPage() {
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="aspect-video lg:aspect-auto">
                   <Image
-                    src={blogsData[0].image || "/blog-default-featured.jpg"}
+                    src={blogsData[0].image || "/images/blog-default-featured.jpg"}
                     alt={blogsData[0].title}
                     width={600}
                     height={400}
@@ -65,7 +105,7 @@ export default function BlogPage() {
             <Card key={post.id} className="hover-lift group">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <Image
-                  src={post.image || "/blog-default-post.jpg"}
+                  src={post.image || "/images/blog-default-post.jpg"}
                   alt={post.title}
                   width={400}
                   height={250}

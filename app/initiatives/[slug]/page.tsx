@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
@@ -13,7 +14,7 @@ interface Initiative {
   description: string
   image: string
   features: string[]
-  impact: Record<string, string>
+  impact: Record<string, string | undefined>
 }
 
 export async function generateStaticParams() {
@@ -22,18 +23,49 @@ export async function generateStaticParams() {
   }))
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const initiative = initiativesData.find((init) => init.id === params.slug)
 
   if (!initiative) {
     return {
-      title: "Initiative Not Found",
+      title: "Initiative Not Found - Initiatives Foundation",
+      description: "The initiative you are looking for does not exist.",
     }
   }
 
   return {
-    title: `${initiative.name} | Initiatives Foundation`,
+    title: `${initiative.name} - Initiatives Foundation`,
     description: initiative.description,
+    keywords: [
+      `${initiative.name} Initiatives Foundation`,
+      `${initiative.shortName} program`,
+      "Initiatives Foundation",
+      "Nepal education",
+      ...initiative.features.map((f) => f.toLowerCase()),
+    ],
+    openGraph: {
+      title: `${initiative.name} - Initiatives Foundation`,
+      description: initiative.description,
+      url: `https://www.initiativesfoundation.org/initiatives/${initiative.id}`,
+      siteName: "Initiatives Foundation",
+      images: [
+        {
+          url: initiative.image || "https://www.initiativesfoundation.org/images/initiative-default-detail.jpg",
+          width: 800,
+          height: 600,
+          alt: initiative.name,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${initiative.name} - Initiatives Foundation`,
+      description: initiative.description,
+      creator: "@initiativesfdn",
+      images: [initiative.image || "https://www.initiativesfoundation.org/images/initiative-default-detail.jpg"],
+    },
   }
 }
 
@@ -49,7 +81,7 @@ export default function InitiativePage({ params }: { params: { slug: string } })
       <div className="relative">
         <div className="h-48 md:h-64 lg:h-72 relative">
           <Image
-            src={initiative.image || "/initiative-default-detail.jpg"}
+            src={initiative.image || "/images/initiative-default-detail.jpg"}
             alt={initiative.name}
             fill
             className="object-cover"
